@@ -51,6 +51,16 @@ func main() {
 				continue
 			}
 
+			// Check AI command
+			if args[0] == "ai" {
+				if len(args) > 1 {
+					HandleAICommand(strings.Join(args[1:], " "))
+				} else {
+					fmt.Println("Usage: ai <query>")
+				}
+				continue
+			}
+
 			ExecuteSingle(args)
 		} else {
 			ExecutePipeline(commands)

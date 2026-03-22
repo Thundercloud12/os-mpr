@@ -1,0 +1,27 @@
+# Binaries for programs and plugins
+myshell
+*.exe
+*.test
+*.out
+*.dll
+*.so
+*.dylib
+
+# Compiled Object files
+*.o
+*.a
+*.obj
+*.lib
+
+# Dependencies
+# vendor/
+
+# Mac OS
+.DS_Store
+
+# IDE directories
+.vscode/
+.idea/
+
+# Environment Variables
+.env
